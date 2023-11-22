@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee shop</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Righteous&family=Urbanist:wght@500;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    
+</head>
+<body>
+    <header class="header-main" id="header">
+        <div class="container container-header">
+            <div class="header">
+                <button class="close-btn material-icons">highlight_off</button>
+                <nav class="nav-main">
+                    <button class="burger material-icons hide-desktop">menu
+                    </button>
+                    <ul class="nav-main__list">
+                        <li class="nav-main__item">
+                            <a class="nav-main__link nav-main__link_selected" href="#">Home</a>
+                        </li>
+                        <li class="nav-main__item">
+                            <a class="nav-main__link" href="#">About</a>
+                        </li>
+                        <li class="nav-main__item">
+                            <a class="nav-main__link" href="#">Menu</a>
+                        </li>
+                        <li class="nav-main__item">
+                            <a class="nav-main__link" href="#">Reservation</a>
+                        </li>
+                    </ul>
+                    <img class="header__logo" src="./img/logo.svg" alt="coffee">
+                    <ul class="nav-main__list">
+                        <li class="nav-main__item">
+                            <a class="nav-main__link" href="#">Pages</a>
+                        </li>
+                        <li class="nav-main__item">
+                            <a class="nav-main__link" href="#">Shop</a>
+                        </li>
+                        <li class="nav-main__item">
+                            <a class="nav-main__link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-action">
+                    <button class="btn header-action__search material-icons md-light" aria-label="Search">search</button>
+                    <button class="btn header-action__cart material-icons md-light" aria-label="Shopping bag">shopping_bag</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section" id="hero">
+            <div class="container container-hero">
+                <div class="banner">
+                    <div class="banner-info">
+                        <h2 class="banner-info__header">Enjoy Your Morning Coffee.</h2>
+                        <p class="banner-info__descr text">
+                            The coofee is brewed by fist roasting the green coffee beans over hot coals in brazier. given to Opportunity
+                        </p>
+                        <button class="banner-info__btn btn btn-primary" aria-label="Test coffee">Test coffee</button>
+                    </div>
+                    <button class="play-btn btn" aria-label="Play video">Play video
+                        <svg class="play-btn__svg" width="70" height="70" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="20" stroke="#FFF" stroke-width="2"></circle>
+                            <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#FFF"></path>
+                          </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <ol class="features section-gap">
+                <li class="features__item">
+                    <div class="features__name">
+                        <span class="features__number">01</span>Best Coffee Flavour
+                    </div>
+                    <img class="features__img" src="./img/feature-1.jpg" alt="">
+                </li>
+                <li class="features__item">
+                    <div class="features__name">
+                        <span class="features__number">02</span>Place to get lost
+                    </div>
+                    <img class="features__img" src="./img/feature-2.jpg" alt="">
+                </li>
+                <li class="features__item">
+                    <div class="features__name">
+                        <span class="features__number">03</span>Proper roesting
+                    </div>
+                    <img class="features__img" src="./img/feature-3.jpg" alt="">
+                </li>
+            </ol>
+        </div>
+        <section class="history-section section-gap" id="history">
+            <div class="container">
+                <div class="history-wrapper">
+                    <img class="history-wrapper__img" src="./img/history-1.jpg" alt="">
+                    <img class="history-wrapper__img" src="./img/history-2.jpg" alt="">
+                    <img class="history-wrapper__img" src="./img/history-3.jpg" alt="">
+                    <div class="history">
+                        <h2 class="history__title section-title">Our history</h2>
+                        <h3 class="history__subtitle subtitle">Create a new story with&nbsp;us</h3>
+                        <p class="history__descr text">mauris rhoncus in imperdiet placerat. vestibu emismd nisl suscirpit ligula volutpat, a feyguat urn maxmaus. cars massa nibhtincidunt. donec et nibh maximus, est eu, mattis nuce. preasent ut quam quis quam venen
+                            atis fringilla. morbi vastibulum id tells mmodo mattis. aliauam erat volutpal.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products-section section-gap" id="products">
+            <div class="container">
+                <h2 class="products-section__title section-title">Popular Product</h2>
+                <h3 class="products-section__subtitle subtitle">Coffee popular Product</h3>
+                <div class="products-wrapper">
+                    <div class="products-list">
+                        <article class="product">
+                            <img class="product__img" src="./img/product-1.jpg" alt="">
+                            <div class="rating">
+                                <h4 class="rating__title">Coffee</h4>
+                                <ul class="rating__all-stars">
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star_border</li>
+                                </ul>
+                            </div>
+                            <h3 class="product__name">brazil coffee gred</h3>
+                            <p class="product__price">Price - <span class="product__new-price">$320.00</span>/ $358</p>
+                            <button class="product__btn-buy btn btn-primary"><span class="material-icons">local_mall</span>Add to cart</button>
+                        </article>
+                        <article class="product">
+                            <img class="product__img" src="./img/product-1.jpg" alt="">
+                            <div class="rating">
+                                <h4 class="rating__title">Coffee</h4>
+                                <ul class="rating__all-stars">
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star_border</li>
+                                </ul>
+                            </div>
+                            <h3 class="product__name">brazil coffee gred</h3>
+                            <p class="product__price">Price - <span class="product__new-price">$320.00</span>/ $358</p>
+                            <button class="product__btn-buy btn btn-primary"><span class="material-icons">local_mall</span>Add to cart</button>
+                        </article>
+                        <article class="product">
+                            <img class="product__img" src="./img/product-1.jpg" alt="">
+                            <div class="rating">
+                                <h4 class="rating__title">Coffee</h4>
+                                <ul class="rating__all-stars">
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star_border</li>
+                                </ul>
+                            </div>
+                            <h3 class="product__name">brazil coffee gred</h3>
+                            <p class="product__price">Price - <span class="product__new-price">$320.00</span>/ $358</p>
+                            <button class="product__btn-buy btn btn-primary"><span class="material-icons">local_mall</span>Add to cart</button>
+                        </article>
+                        <article class="product">
+                            <img class="product__img" src="./img/product-1.jpg" alt="">
+                            <div class="rating">
+                                <h4 class="rating__title">Coffee</h4>
+                                <ul class="rating__all-stars">
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star_border</li>
+                                </ul>
+                            </div>
+                            <h3 class="product__name">brazil coffee gred</h3>
+                            <p class="product__price">Price - <span class="product__new-price">$320.00</span>/ $358</p>
+                            <button class="product__btn-buy btn btn-primary"><span class="material-icons">local_mall</span>Add to cart</button>
+                        </article>
+                        <article class="product">
+                            <img class="product__img" src="./img/product-1.jpg" alt="">
+                            <div class="rating">
+                                <h4 class="rating__title">Coffee</h4>
+                                <ul class="rating__all-stars">
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star_border</li>
+                                </ul>
+                            </div>
+                            <h3 class="product__name">brazil coffee gred</h3>
+                            <p class="product__price">Price - <span class="product__new-price">$320.00</span>/ $358</p>
+                            <button class="product__btn-buy btn btn-primary"><span class="material-icons">local_mall</span>Add to cart</button>
+                        </article>
+                        <article class="product">
+                            <img class="product__img" src="./img/product-1.jpg" alt="">
+                            <div class="rating">
+                                <h4 class="rating__title">Coffee</h4>
+                                <ul class="rating__all-stars">
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star_border</li>
+                                </ul>
+                            </div>
+                            <h3 class="product__name">brazil coffee gred</h3>
+                            <p class="product__price">Price - <span class="product__new-price">$320.00</span>/ $358</p>
+                            <button class="product__btn-buy btn btn-primary"><span class="material-icons">local_mall</span>Add to cart</button>
+                        </article>
+                        <article class="product">
+                            <img class="product__img" src="./img/product-1.jpg" alt="">
+                            <div class="rating">
+                                <h4 class="rating__title">Coffee</h4>
+                                <ul class="rating__all-stars">
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star_border</li>
+                                </ul>
+                            </div>
+                            <h3 class="product__name">brazil coffee gred</h3>
+                            <p class="product__price">Price - <span class="product__new-price">$320.00</span>/ $358</p>
+                            <button class="product__btn-buy btn btn-primary"><span class="material-icons">local_mall</span>Add to cart</button>
+                        </article>
+                        <article class="product">
+                            <img class="product__img" src="./img/product-1.jpg" alt="">
+                            <div class="rating">
+                                <h4 class="rating__title">Coffee</h4>
+                                <ul class="rating__all-stars">
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star_border</li>
+                                </ul>
+                            </div>
+                            <h3 class="product__name">brazil coffee gred</h3>
+                            <p class="product__price">Price - <span class="product__new-price">$320.00</span>/ $358</p>
+                            <button class="product__btn-buy btn btn-primary"><span class="material-icons">local_mall</span>Add to cart</button>
+                        </article>
+                        <article class="product">
+                            <img class="product__img" src="./img/product-1.jpg" alt="">
+                            <div class="rating">
+                                <h4 class="rating__title">Coffee</h4>
+                                <ul class="rating__all-stars">
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star</li>
+                                    <li class="rating__star material-icons">star_border</li>
+                                </ul>
+                            </div>
+                            <h3 class="product__name">brazil coffee gred</h3>
+                            <p class="product__price">Price - <span class="product__new-price">$320.00</span>/ $358</p>
+                            <button class="product__btn-buy btn btn-primary"><span class="material-icons">local_mall</span>Add to cart</button>
+                        </article>
+                    </div>
+                    <button class="btn-more btn btn-primary">View all product</button>
+                </div>
+                <article class="special">
+                    <img class="special__img" src="./img/special-product.png" alt="">
+                    <div class="special__descr">
+                        <h3 class="special__subtitle subtitle">Coffee&nbsp;machine, buy for&nbsp;home</h3>
+                        <p class="special__text text">mauris rhoncus in imperdiet placerat. vestibu emismd nisl suscirpit ligula
+                            volutpat, a feyguat urn maxmaus. cars massa nibhtincidunt. donec et nib
+                             maximus, est eu, mattis nuce. preasent ut quam quis quam venen atis fri
+                            ngilla. morbi vastibulum id tells mmodo mattis. aliauam erat volutpal.</p>
+                        <a class="special__link btn btn-primary" href="#">Discover now</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="menu-section section-gap" id="menu">
+            <div class="container">
+                <h2 class="menu-section__title section-title">Menu</h2>
+                <h3 class="menu-section__subtitle subtitle">Coffee popular menu</h3>
+
+                <div class="product-list">
+                    <div class="swiper swiper-menu">
+                        <div class="swiper-wrapper">
+                                <!-- Slide start -->
+                                <div class="swiper-slide menu-card">
+                                    <img class="menu-card__img" src="./img/feature-1.jpg" alt="">
+                                    <h4 class="menu-card__title">Americano rosted gred</h4>
+                                    <span class="menu-card__price">$12</span>
+                                </div>
+                                <!-- Slide end -->
+                                <!-- Slide start -->
+                                <div class="swiper-slide menu-card">
+                                    <img class="menu-card__img" src="./img/feature-2.jpg" alt="">
+                                    <h4 class="menu-card__title">Pistachio Latte</h4>
+                                    <span class="menu-card__price">$12</span>
+                                </div>
+                                <!-- Slide end -->
+                                <!-- Slide start -->
+                                <div class="swiper-slide menu-card">
+                                    <img class="menu-card__img" src="./img/feature-3.jpg" alt="">
+                                    <h4 class="menu-card__title">Featured Blonde Roast</h4>
+                                    <span class="menu-card__price">$12</span>
+                                </div>
+                                <!-- Slide end -->
+                                <!-- Slide start -->
+                                <div class="swiper-slide menu-card">
+                                    <img class="menu-card__img" src="./img/feature-1.jpg" alt="">
+                                    <h4 class="menu-card__title">Featured Medium Roast Pike Place® Roast</h4>
+                                    <span class="menu-card__price">$12</span>
+                                </div>
+                                <!-- Slide end -->
+                                <!-- Slide start -->
+                                <div class="swiper-slide menu-card">
+                                    <img class="menu-card__img" src="./img/feature-2.jpg" alt="">
+                                    <h4 class="menu-card__title">Featured Dark Roast Caffè Verona®</h4>
+                                    <span class="menu-card__price">$12</span>
+                                </div>
+                                <!-- Slide end -->
+                                <!-- Slide start -->
+                                <div class="swiper-slide menu-card">
+                                    <img class="menu-card__img" src="./img/feature-3.jpg" alt="">
+                                    <h4 class="menu-card__title">Clover Vertica Christmas Blend</h4>
+                                    <span class="menu-card__price">$12</span>
+                                </div>
+                                <!-- Slide end -->
+                        </div>
+                        <div class="swiper-navigation">
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="testimonial-section section-gap" id="testimonial">
+            <div class="container">
+                <h2 class="testimonial-section__title section-title">Testimonial</h2>
+                <h3 class="testimonial-section__subtitle subtitle">Says our customers</h3>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="feedback">
+                                <div class="feedback__top">
+                                    <img class="feedback__photo" src="./img/feedback-1.jpg" alt="">
+                                    <p class="feedback__text text">1 Education WP is a special build for effective education & Learning Management System site. Education WP is the next generation & one of the best education WordPress themes which all the strength of eLearning WP..</p>
+                                </div>
+                                <div class="feedback__bottom info">
+                                    <div class="info__person">
+                                        <p class="info__person-name">John Smith</p>
+                                        <p class="info__person-profession">Product Designer</p>
+                                    </div>
+                                    <ul class="info__stars">
+                                        <li class="info__star-item material-icons">star</li>
+                                        <li class="info__star-item material-icons">star</li>
+                                        <li class="info__star-item material-icons">star</li>
+                                        <li class="info__star-item material-icons">star</li>
+                                        <li class="info__star-item material-icons">star</li>    
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="feedback">
+                                <div class="feedback__top">
+                                    <img class="feedback__photo" src="./img/feedback-1.jpg" alt="">
+                                    <p class="feedback__text text">2 Education WP is a special build for effective education & Learning Management System site. Education WP is the next generation & one of the best education WordPress themes which all the strength of eLearning WP..</p>
+                                </div>
+                                <div class="feedback__bottom info">
+                                    <div class="info__person">
+                                        <p class="info__person-name">John Smith</p>
+                                        <p class="info__person-profession">Product Designer</p>
+                                    </div>
+                                    <ul class="info__stars">
+                                        <li class="info__star-item material-icons">star</li>
+                                        <li class="info__star-item material-icons">star</li>
+                                        <li class="info__star-item material-icons">star</li>
+                                        <li class="info__star-item material-icons">star</li>
+                                        <li class="info__star-item material-icons">star</li>    
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="feedback">
+                                <div class="feedback__top">
+                                    <img class="feedback__photo" src="./img/feedback-1.jpg" alt="">
+                                    <p class="feedback__text text">3 Education WP is a special build for effective education & Learning Management System site. Education WP is the next generation & one of the best education WordPress themes which all the strength of eLearning WP..</p>
+                                </div>
+                                <div class="feedback__bottom info">
+                                    <div class="info__person">
+                                        <p class="info__person-name">John Smith</p>
+                                        <p class="info__person-profession">Product Designer</p>
+                                    </div>
+                                    <ul class="info__stars">
+                                        <li class="info__star-item material-icons">star</li>
+                                        <li class="info__star-item material-icons">star</li>
+                                        <li class="info__star-item material-icons">star</li>
+                                        <li class="info__star-item material-icons">star</li>
+                                        <li class="info__star-item material-icons">star</li>    
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="feedback">
+                                <div class="feedback__top">
+                                    <img class="feedback__photo" src="./img/feedback-1.jpg" alt="">
+                                    <p class="feedback__text text">4 Education WP is a special build for effective education & Learning Management System site. Education WP is the next generation & one of the best education WordPress themes which all the strength of eLearning WP..</p>
+                                </div>
+                                <div class="feedback__bottom info">
+                                    <div class="info__person">
+                                        <p class="info__person-name">John Smith</p>
+                                        <p class="info__person-profession">Product Designer</p>
+                                    </div>
+                                    <ul class="info__stars">
+                                        <li class="info__star-item material-icons">star</li>
+                                        <li class="info__star-item material-icons">star</li>
+                                        <li class="info__star-item material-icons">star</li>
+                                        <li class="info__star-item material-icons">star</li>
+                                        <li class="info__star-item material-icons">star</li>    
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="feedback">
+                                <div class="feedback__top">
+                                    <img class="feedback__photo" src="./img/feedback-1.jpg" alt="">
+                                    <p class="feedback__text text">5 Education WP is a special build for effective education & Learning Management System site. Education WP is the next generation & one of the best education WordPress themes which all the strength of eLearning WP..</p>
+                                </div>
+                                <div class="feedback__bottom info">
+                                    <div class="info__person">
+                                        <p class="info__person-name">John Smith</p>
+                                        <p class="info__person-profession">Product Designer</p>
+                                    </div>
+                                    <ul class="info__stars">
+                                        <li class="info__star-item material-icons">star</li>
+                                        <li class="info__star-item material-icons">star</li>
+                                        <li class="info__star-item material-icons">star</li>
+                                        <li class="info__star-item material-icons">star</li>
+                                        <li class="info__star-item material-icons">star</li>    
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="feedback">
+                                <div class="feedback__top">
+                                    <img class="feedback__photo" src="./img/feedback-1.jpg" alt="">
+                                    <p class="feedback__text text">6 Education WP is a special build for effective education & Learning Management System site. Education WP is the next generation & one of the best education WordPress themes which all the strength of eLearning WP..</p>
+                                </div>
+                                <div class="feedback__bottom info">
+                                    <div class="info__person">
+                                        <p class="info__person-name">John Smith</p>
+                                        <p class="info__person-profession">Product Designer</p>
+                                    </div>
+                                    <ul class="info__stars">
+                                        <li class="info__star-item material-icons">star</li>
+                                        <li class="info__star-item material-icons">star</li>
+                                        <li class="info__star-item material-icons">star</li>
+                                        <li class="info__star-item material-icons">star</li>
+                                        <li class="info__star-item material-icons">star</li>    
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="feedback">
+                                <div class="feedback__top">
+                                    <img class="feedback__photo" src="./img/feedback-1.jpg" alt="">
+                                    <p class="feedback__text text">7 Education WP is a special build for effective education & Learning Management System site. Education WP is the next generation & one of the best education WordPress themes which all the strength of eLearning WP..</p>
+                                </div>
+                                <div class="feedback__bottom info">
+                                    <div class="info__person">
+                                        <p class="info__person-name">John Smith</p>
+                                        <p class="info__person-profession">Product Designer</p>
+                                    </div>
+                                    <ul class="info__stars">
+                                        <li class="info__star-item material-icons">star</li>
+                                        <li class="info__star-item material-icons">star</li>
+                                        <li class="info__star-item material-icons">star</li>
+                                        <li class="info__star-item material-icons">star</li>
+                                        <li class="info__star-item material-icons">star</li>    
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="feedback">
+                                <div class="feedback__top">
+                                    <img class="feedback__photo" src="./img/feedback-1.jpg" alt="">
+                                    <p class="feedback__text text">8 Education WP is a special build for effective education & Learning Management System site. Education WP is the next generation & one of the best education WordPress themes which all the strength of eLearning WP..</p>
+                                </div>
+                                <div class="feedback__bottom info">
+                                    <div class="info__person">
+                                        <p class="info__person-name">John Smith</p>
+                                        <p class="info__person-profession">Product Designer</p>
+                                    </div>
+                                    <ul class="info__stars">
+                                        <li class="info__star-item material-icons">star</li>
+                                        <li class="info__star-item material-icons">star</li>
+                                        <li class="info__star-item material-icons">star</li>
+                                        <li class="info__star-item material-icons">star</li>
+                                        <li class="info__star-item material-icons">star</li>    
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="feedback-action">
+                        <div class="feedback-action__counter">
+                            <p class="feedback-action__text"><span class="counter">2</span>/<span class="all-count">6</span> People</p>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="feedback-action__buttons">
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="reservation-section section-gap" id="reservation">
+            <div class="container">
+                <div class="reservation-wrapper">
+                    <div class="reservation-map map" id="map"></div>
+                    <div class="reservation">
+                        <h2 class="reservation__title section-title">Reservation</h2>
+                        <h3 class="reservation__subtitle subtitle">Booking a table</h3>
+                        <form class="reservation__form communication-form" action="" method="POST">
+                            <input class="communication-form__numbers communication-form__input field-style" type="text" placeholder="4 Person" aria-label="Number of people">
+                            <input class="communication-form__date communication-form__input field-style" type="date" value="2023-03-14" aria-label="Date">
+                            <input class="communication-form__time communication-form__input field-style" type="time" value="11:00" aria-label="Time">
+                            <button class="communication-form__btn btn btn-primary" aria-label="Book a table">BOOK A TABLE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news-section section-gap" id="news">
+            <div class="container">
+                <h2 class="news-section__title section-title">Testimonial</h2>
+                <h3 class="news-section__subtitle subtitle">Our latest news</h3>
+                <div class="news-wrapper">
+                    <article class="news">
+                        <img class="news__img" src="./img/news-1.jpg" alt="">
+                        <div class="news__descr">
+                            <div class="news__info">
+                                <div class="news__autor"><span class="news__accent">By:</span>&nbsp;rasaline</div>
+                                <div class="news__date">23.01.2021</div>
+                            </div>
+                            <div class="news__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus tempore accusamus quos veritatis. Minus non odit adipisci eaque doloremque tempore minima repellendus. Perferendis placeat beatae dolorem? Ratione aperiam ducimus repellat!</div>
+                            <a class="news__link" href="#">Read More
+                                <svg class="news__arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12H19" stroke="#C99E71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 5L19 12L12 19" stroke="#C99E71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>   
+                            </a>
+                        </div>
+                    </article>
+                    <article class="news">
+                        <img class="news__img" src="./img/news-1.jpg" alt="">
+                        <div class="news__descr">
+                            <div class="news__info">
+                                <div class="news__autor"><span class="news__accent">By:</span>&nbsp;rasaline</div>
+                                <div class="news__date">23.01.2021</div>
+                            </div>
+                            <div class="news__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus tempore accusamus quos veritatis. Minus non odit adipisci eaque doloremque tempore minima repellendus. Perferendis placeat beatae dolorem? Ratione aperiam ducimus repellat!</div>
+                            <a class="news__link" href="#">Read More
+                                <svg class="news__arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12H19" stroke="#C99E71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 5L19 12L12 19" stroke="#C99E71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>   
+                            </a>
+                        </div>
+                    </article>
+                    <article class="news">
+                        <img class="news__img" src="./img/news-1.jpg" alt="">
+                        <div class="news__descr">
+                            <div class="news__info">
+                                <div class="news__autor"><span class="news__accent">By:</span>&nbsp;rasaline</div>
+                                <div class="news__date">23.01.2021</div>
+                            </div>
+                            <div class="news__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus tempore accusamus quos veritatis. Minus non odit adipisci eaque doloremque tempore minima repellendus. Perferendis placeat beatae dolorem? Ratione aperiam ducimus repellat!</div>
+                            <a class="news__link" href="#">Read More
+                                <svg class="news__arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12H19" stroke="#C99E71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 5L19 12L12 19" stroke="#C99E71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>   
+                            </a>
+                        </div>
+                    </article>
+                    <article class="news">
+                        <img class="news__img" src="./img/news-1.jpg" alt="">
+                        <div class="news__descr">
+                            <div class="news__info">
+                                <div class="news__autor"><span class="news__accent">By:</span>&nbsp;rasaline</div>
+                                <div class="news__date">23.01.2021</div>
+                            </div>
+                            <div class="news__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus tempore accusamus quos veritatis. Minus non odit adipisci eaque doloremque tempore minima repellendus. Perferendis placeat beatae dolorem? Ratione aperiam ducimus repellat!</div>
+                            <a class="news__link" href="#">Read More
+                                <svg class="news__arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12H19" stroke="#C99E71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 5L19 12L12 19" stroke="#C99E71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>   
+                            </a>
+                        </div>
+                    </article>
+                    <article class="news">
+                        <img class="news__img" src="./img/news-1.jpg" alt="">
+                        <div class="news__descr">
+                            <div class="news__info">
+                                <div class="news__autor"><span class="news__accent">By:</span>&nbsp;rasaline</div>
+                                <div class="news__date">23.01.2021</div>
+                            </div>
+                            <div class="news__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus tempore accusamus quos veritatis. Minus non odit adipisci eaque doloremque tempore minima repellendus. Perferendis placeat beatae dolorem? Ratione aperiam ducimus repellat!</div>
+                            <a class="news__link" href="#">Read More
+                                <svg class="news__arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12H19" stroke="#C99E71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 5L19 12L12 19" stroke="#C99E71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>   
+                            </a>
+                        </div>
+                    </article>
+                    <article class="news">
+                        <img class="news__img" src="./img/news-1.jpg" alt="">
+                        <div class="news__descr">
+                            <div class="news__info">
+                                <div class="news__autor"><span class="news__accent">By:</span>&nbsp;rasaline</div>
+                                <div class="news__date">23.01.2021</div>
+                            </div>
+                            <div class="news__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus tempore accusamus quos veritatis. Minus non odit adipisci eaque doloremque tempore minima repellendus. Perferendis placeat beatae dolorem? Ratione aperiam ducimus repellat!</div>
+                            <a class="news__link" href="#">Read More
+                                <svg class="news__arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12H19" stroke="#C99E71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 5L19 12L12 19" stroke="#C99E71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>   
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <button class="news-more-btn btn btn-primary">Show more</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <img class="footer__logo" src="./img/logo.svg" alt="">
+            <div class="footer-list">
+                <a class="footer-list__link" href="">Home</a>
+                <a class="footer-list__link" href="">Rerervation</a>
+                <a class="footer-list__link" href="">Menu</a>
+                <a class="footer-list__link" href="">About</a>
+                <a class="footer-list__link" href="">Pages</a>
+                <a class="footer-list__link" href="">Shop</a>
+                <a class="footer-list__link" href="">Blogs</a>
+            </div>
+            <form class="footer-form" action="">
+                <input class="footer-form__email field-style" type="email" placeholder="Enter your Email" aria-label="Enter email">
+                <button class="footer-form__btn btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.99994 12L18.9999 12" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 5L19 12L12 19" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+        <div class="footer-copyright">e-Tennis © 2021. All rights reserved.</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
